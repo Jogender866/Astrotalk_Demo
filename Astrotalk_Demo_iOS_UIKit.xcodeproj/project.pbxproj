@@ -13,6 +13,8 @@
 		8D1F99062AA7243100904521 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D1F99042AA7243100904521 /* Main.storyboard */; };
 		8D1F99082AA7243200904521 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D1F99072AA7243200904521 /* Assets.xcassets */; };
 		8D1F990B2AA7243200904521 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D1F99092AA7243200904521 /* LaunchScreen.storyboard */; };
+		8D1F99172AA7247300904521 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D1F99162AA7247300904521 /* Home.storyboard */; };
+		8D1F991A2AA7249C00904521 /* HomeViewC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1F99192AA7249C00904521 /* HomeViewC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		8D1F99072AA7243200904521 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D1F990A2AA7243200904521 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8D1F990C2AA7243200904521 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D1F99162AA7247300904521 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		8D1F99192AA7249C00904521 /* HomeViewC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,57 @@
 		8D1F98FD2AA7243100904521 /* Astrotalk_Demo_iOS_UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				8D1F98FE2AA7243100904521 /* AppDelegate.swift */,
-				8D1F99002AA7243100904521 /* SceneDelegate.swift */,
-				8D1F99022AA7243100904521 /* ViewController.swift */,
-				8D1F99042AA7243100904521 /* Main.storyboard */,
-				8D1F99072AA7243200904521 /* Assets.xcassets */,
-				8D1F99092AA7243200904521 /* LaunchScreen.storyboard */,
+				8D1F99122AA7244300904521 /* SystemFiles */,
+				8D1F99182AA7248000904521 /* Controllers */,
+				8D1F99132AA7244F00904521 /* Storyboards */,
+				8D1F99152AA7245F00904521 /* Resources */,
 				8D1F990C2AA7243200904521 /* Info.plist */,
 			);
 			path = Astrotalk_Demo_iOS_UIKit;
+			sourceTree = "<group>";
+		};
+		8D1F99122AA7244300904521 /* SystemFiles */ = {
+			isa = PBXGroup;
+			children = (
+				8D1F98FE2AA7243100904521 /* AppDelegate.swift */,
+				8D1F99002AA7243100904521 /* SceneDelegate.swift */,
+				8D1F99022AA7243100904521 /* ViewController.swift */,
+			);
+			path = SystemFiles;
+			sourceTree = "<group>";
+		};
+		8D1F99132AA7244F00904521 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				8D1F99042AA7243100904521 /* Main.storyboard */,
+				8D1F99092AA7243200904521 /* LaunchScreen.storyboard */,
+				8D1F99162AA7247300904521 /* Home.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		8D1F99142AA7245900904521 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				8D1F99072AA7243200904521 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		8D1F99152AA7245F00904521 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8D1F99142AA7245900904521 /* Assets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8D1F99182AA7248000904521 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8D1F99192AA7249C00904521 /* HomeViewC.swift */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,12 +123,15 @@
 				8D1F98F72AA7243100904521 /* Sources */,
 				8D1F98F82AA7243100904521 /* Frameworks */,
 				8D1F98F92AA7243100904521 /* Resources */,
+				8D1F99202AA727C100904521 /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Astrotalk_Demo_iOS_UIKit;
+			packageProductDependencies = (
+			);
 			productName = Astrotalk_Demo_iOS_UIKit;
 			productReference = 8D1F98FB2AA7243100904521 /* Astrotalk_Demo_iOS_UIKit.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +160,8 @@
 				Base,
 			);
 			mainGroup = 8D1F98F22AA7243100904521;
+			packageReferences = (
+			);
 			productRefGroup = 8D1F98FC2AA7243100904521 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -128,10 +179,31 @@
 				8D1F990B2AA7243200904521 /* LaunchScreen.storyboard in Resources */,
 				8D1F99082AA7243200904521 /* Assets.xcassets in Resources */,
 				8D1F99062AA7243100904521 /* Main.storyboard in Resources */,
+				8D1F99172AA7247300904521 /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8D1F99202AA727C100904521 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [[ \"$(uname -m)\" == arm64 ]]; then\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8D1F98F72AA7243100904521 /* Sources */ = {
@@ -139,6 +211,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D1F99032AA7243100904521 /* ViewController.swift in Sources */,
+				8D1F991A2AA7249C00904521 /* HomeViewC.swift in Sources */,
 				8D1F98FF2AA7243100904521 /* AppDelegate.swift in Sources */,
 				8D1F99012AA7243100904521 /* SceneDelegate.swift in Sources */,
 			);
